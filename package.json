@@ -4,7 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "serve": "webpack serve --mode=development",
+    "build": "webpack --mode=production",
+    "dev-build": "webpack --mode=development"
+  },
+  "jest":{
+    "transform":{
+      "\\.js$":"babel-jest"
+    }
+
   },
   "repository": {
     "type": "git",
